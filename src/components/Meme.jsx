@@ -1,3 +1,4 @@
+import memesData from "../memesData.js";
 export default function Meme() {
   return (
     <main>
