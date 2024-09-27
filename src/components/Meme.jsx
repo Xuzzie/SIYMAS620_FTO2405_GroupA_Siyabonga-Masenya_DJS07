@@ -2,8 +2,8 @@ import memesData from "../memesData.js";
 import React from "react";
 
 export default function Meme() {
-  // Had to rewrite sections of the code since i had various bugging issues
-  const [memeImage, setMemeImage] = React.useState(""); // react stae allows for the
+  // Move useState outside of the getMemeImage function
+  const [memeImage, setMemeImage] = React.useState("");
 
   function getMemeImage(event) {
     // Prevent form submission and page reload
@@ -35,8 +35,11 @@ export default function Meme() {
           Get a new meme image 🖼
         </button>
       </form>
-      {/* Make sure to handle the image if memeImage is empty */}
-      {memeImage && <img src={memeImage} alt="Meme" className="meme--image" />}
+      <div className="meme--container">
+        {memeImage && (
+          <img src={memeImage} alt="Meme" className="meme--image" />
+        )}
+      </div>
     </main>
   );
 }

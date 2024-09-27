@@ -60,10 +60,16 @@ main {
   border-radius: 5px;
   background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
   color: white;
+  height: 50px;
   border: none;
   cursor: pointer;
 }
 
+.meme--container {
+  margin-top: 200px;
+  text-align: center;
+}
+
 .meme--image {
-  max-width: 100%;
+  max-width: 50%;
 }
