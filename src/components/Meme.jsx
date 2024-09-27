@@ -36,7 +36,7 @@ export default function Meme() {
         </button>
       </form>
       {/* Make sure to handle the image if memeImage is empty */}
-      {memeImage && <img src={memeImage} alt="Meme" />}
+      {memeImage && <img src={memeImage} alt="Meme" className="meme--image" />}
     </main>
   );
 }
