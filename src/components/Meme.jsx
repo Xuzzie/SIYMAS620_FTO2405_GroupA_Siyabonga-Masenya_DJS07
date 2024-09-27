@@ -1,9 +1,13 @@
 export default function Meme() {
   return (
     <main>
-      <form action="">
-        <input type="text" />
-        <input type="text" />
+      <form className="form" action="">
+        <input type="text" className="form--input" placeholder="Top text" />
+        <input
+          type="text"
+          className="form--input"
+          placeholder=" Bottom text "
+        />
         <button>Get a new meme image 🖼</button>
       </form>
     </main>
