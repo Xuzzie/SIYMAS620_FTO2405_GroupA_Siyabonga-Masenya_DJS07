@@ -1,8 +1,9 @@
 export default function Header() {
   return (
-    <div>
+    <header className="header">
       <img src="images/troll-face.png" alt="" />
-      <h2>Header component</h2>;
-    </div>
+      <h2>Header component</h2>
+      <h4>React Course - Project 3 </h4>
+    </header>
   );
 }
