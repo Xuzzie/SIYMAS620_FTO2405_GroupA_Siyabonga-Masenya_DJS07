@@ -1,3 +1,8 @@
 export default function Header() {
-  return <h1>Header component</h1>;
+  return (
+    <div>
+      <img src="images/troll-face.png" alt="" />
+      <h2>Header component</h2>;
+    </div>
+  );
 }
