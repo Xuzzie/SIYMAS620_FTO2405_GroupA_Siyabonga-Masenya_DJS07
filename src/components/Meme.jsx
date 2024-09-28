@@ -3,7 +3,9 @@ import React from "react";
 
 export default function Meme() {
   // Move useState outside of the getMemeImage function
-  const [memeImage, setMemeImage] = React.useState("");
+  const [memeImage, setMemeImage] = React.useState(
+    "http://i.imgflip.com/1bij.jpg"
+  );
 
   function getMemeImage(event) {
     // Prevent form submission and page reload
