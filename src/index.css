@@ -66,10 +66,39 @@ main {
 }
 
 .meme--container {
+  display: flex;
+  justify-content: center;
   margin-top: 200px;
-  text-align: center;
+}
+
+.meme {
+  position: relative;
+  display: inline-block;
 }
 
 .meme--image {
-  max-width: 50%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.meme--text {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: "Impact", sans-serif;
+  font-size: 2em;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  pointer-events: none; /* Ensures the text doesn't interfere with the image click */
+}
+
+.meme--text.top {
+  top: 10px;
+}
+
+.meme--text.bottom {
+  bottom: 10px;
 }
